@@ -21,3 +21,34 @@ def temp_converter():
 
 temp_converter()
 
+
+
+# Methode 2:
+
+
+class TempConverter():
+    def __init__ (self , fahrenheit , celcius):
+        self.fahrenheit = fahrenheit
+        self.celcius = celcius
+
+
+    def fahrTocel(self):
+        result = (float(self.fahrenheit) - 32) * 5/9
+        print(f"{result:.2f} C")
+        
+
+    def celTofahr(self):
+        result = (float(self.celcius) * 9/5) + 32
+        print(f"{result:.2f} F")
+
+
+
+
+instance = TempConverter(12 , 60)
+
+instance.fahrTocel()
+
+instance.celTofahr()
+
+
+
