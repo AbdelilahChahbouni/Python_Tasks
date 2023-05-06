@@ -39,12 +39,10 @@ def main():
         date2 = convert_form_date(input("enter Please Date 2 : (years/months/days) >> "))
         print(f"The Amount Between Dates Is {get_years(date1 , date2)} Years , {get_months(date1 , date2)} Months , {get_days(date1 , date2)} Days")
 
-        state = input("You Want To Continue Enter Yes ")
-        if state == "yes":
-            pass
-        else: 
+        state = input("You Want To Continue Enter yes or no To Quit : ")
+        if state != "yes":
             state= False
-            print("GoodBay ...")
+            print("GoodBye ...")
 
 
 main()
@@ -67,6 +65,4 @@ main()
 
 
 
-#data = convert_form("10/10/2002")
 
-#print(data)
